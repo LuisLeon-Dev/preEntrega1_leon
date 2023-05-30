@@ -1,0 +1,25 @@
+.navBar {
+  background: var(--background-color);
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+
+  &__logo {
+    width: 183px;
+    height: 43px;
+  }
+
+  &__options {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-weight: var(--montserrat-light);
+
+    a {
+      color: #fff;
+      &:hover {
+        color: #e0e0e0;
+      }
+    }
+  }
+}

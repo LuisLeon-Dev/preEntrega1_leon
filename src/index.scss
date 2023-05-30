@@ -1,0 +1,12 @@
+/*Base*/
+@use "./scss/base/base";
+@use "./scss/base/reset";
+
+/*Utilities*/
+@use "./scss/utilities/variables";
+@use "./scss/utilities/mixins";
+
+/*Components*/
+@use "./scss/components/navBar";
+@use "./scss/components/cartWidget";
+@use "./scss/components/itemListContainer";

@@ -1,0 +1,17 @@
+:root {
+  /*fonts*/
+  --montserrat-font: "Montserrat", sans-serif;
+  --montserrat-ultraLight: 200;
+  --montserrat-light: 300;
+  --montserrat-semiRegular: 400;
+  --montserrat-regular: 500;
+  --montserrat-semiBold: 600;
+  --montserrat-bold: 700;
+
+  /*Colors*/
+  --background-color: linear-gradient(
+    175deg,
+    rgba(17, 39, 88, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
