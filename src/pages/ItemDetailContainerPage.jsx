@@ -17,15 +17,17 @@ const ItemDetailContainerPage = () => {
     );
   }, [id]);
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      {" "}
-      {items.id ? <ItemDetail item={items} /> : null}
+    <div>
+      <h2 style={{ textAlign: "center" }}>Item Detail</h2>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        {items.id ? <ItemDetail item={items} /> : null}
+      </div>
     </div>
   );
 };

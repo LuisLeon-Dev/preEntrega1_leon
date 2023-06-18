@@ -1,25 +1,20 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 //Components
-import ItemListContainer from "./components/ItemListContainer.jsx";
 import NavBar from "./components/NavBar.jsx";
 //Pages
 import HomePage from "./pages/HomePage.jsx";
-import MensClothingPage from "./pages/MensClothingPage.jsx";
-import JeweleryPage from "./pages/JeweleryPage.jsx";
-import ElectronicsPage from "./pages/ElectronicsPage.jsx";
 import ItemDetailContainerPage from "./pages/ItemDetailContainerPage.jsx";
+import Category from "./pages/Category.jsx";
 
 function App() {
   return (
     <div>
-      <NavBar />
       <Router>
+        <NavBar />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/" element={<MensClothingPage />} />
-          <Route path="/" element={<JeweleryPage />} />
-          <Route path="/" element={<ElectronicsPage />} />
           <Route path="/detail/:id" element={<ItemDetailContainerPage />} />
+          <Route path="/category/:categoryId" element={<Category />} />
         </Routes>
       </Router>
     </div>

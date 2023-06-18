@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 // import logo from "../assets/logo.png";
 import { Icon } from "@iconify/react";
 
@@ -7,20 +8,21 @@ import CartWidget from "./CartWidget";
 const NavBar = () => {
   return (
     <nav className="navBar">
-      <div className="navBar__logo">
+      <Link to="/" className="navBar__logo">
         <Icon icon="clarity:cd-dvd-line" color="white" width="50" height="50" />
         <h2>Slinky Store</h2>
-      </div>
+      </Link>
+
       {/* <img src={logo} alt="logo de la marca" className="navBar__logo" /> */}
       <ul className="navBar__options">
         <li>
-          <a href="#">Men's Clothing</a>
+          <Link to="/category/men's clothing">Men's Clothing</Link>
         </li>
         <li>
-          <a href="#">Jewelery</a>
+          <Link to="/category/jewelery">Jewelery</Link>
         </li>
         <li>
-          <a href="#">Electronics</a>
+          <Link to="/category/electronics">Electronics</Link>
         </li>
       </ul>
       <CartWidget />
