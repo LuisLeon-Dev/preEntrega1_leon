@@ -5,10 +5,12 @@
   padding: 2rem;
 
   &__logo {
-    width: 183px;
-    height: 43px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-family: var(--logo-font);
   }
-
   &__options {
     display: flex;
     align-items: center;

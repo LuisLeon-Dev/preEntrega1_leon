@@ -1,23 +1,26 @@
 import React from "react";
-import logo from "../assets/logo.png";
+// import logo from "../assets/logo.png";
+import { Icon } from "@iconify/react";
+
 import CartWidget from "./CartWidget";
 
 const NavBar = () => {
   return (
     <nav className="navBar">
-      <img src={logo} alt="logo de la marca" className="navBar__logo" />
+      <div className="navBar__logo">
+        <Icon icon="clarity:cd-dvd-line" color="white" width="50" height="50" />
+        <h2>Slinky Store</h2>
+      </div>
+      {/* <img src={logo} alt="logo de la marca" className="navBar__logo" /> */}
       <ul className="navBar__options">
         <li>
-          <a href="#">Proximos estrenos</a>
+          <a href="#">Men's Clothing</a>
         </li>
         <li>
-          <a href="#">Cinepolis VIP</a>
+          <a href="#">Jewelery</a>
         </li>
         <li>
-          <a href="#">Club Cinepolis</a>
-        </li>
-        <li>
-          <a href="#">Cinepolis Jr.</a>
+          <a href="#">Electronics</a>
         </li>
       </ul>
       <CartWidget />

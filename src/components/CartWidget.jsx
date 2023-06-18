@@ -1,11 +1,15 @@
 import React from "react";
-import cartIcon from "../assets/ticketIcon.png";
+import { Icon } from "@iconify/react";
 
 const CartWidget = () => {
   return (
     <div className="cart">
       <p className="cart__number">2</p>
-      <img src={cartIcon} alt="" className="cart__img " />
+      <Icon
+        icon="material-symbols:shopping-cart-outline"
+        color="white"
+        className="cart__img"
+      />
     </div>
   );
 };
