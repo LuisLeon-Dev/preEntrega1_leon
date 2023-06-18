@@ -7,7 +7,7 @@ import CardComponent from "../components/CardComponent";
 
 const Category = () => {
   const [items, setItem] = useState([]);
-  let { categoryId } = useParams();
+  let { categoryId, id } = useParams();
 
   let filteredItems = items.filter((item) => {
     return item.category === categoryId;
@@ -19,14 +19,13 @@ const Category = () => {
     );
   }, []);
 
-  console.log(categoryId);
   return (
     <div>
       <div className="items">
         {filteredItems.map((item) => {
           return (
             <div key={item.id}>
-              <Link to={`detail/${item.id}`}>
+              <Link to={`../detail/${item.id}`}>
                 <CardComponent item={item} />
               </Link>
             </div>
